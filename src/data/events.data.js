@@ -1,38 +1,3 @@
-export const EventsData2425 = [
-    {
-        name: "Mind Over Data",
-        class: 'event2425_1',
-        photos: [require('../assets/events/mod1.jpg'), require('../assets/events/mod2.jpeg'), require('../assets/events/mod3.jpg')],
-        description: `Mind Over Data was a competition organized by Blissful Minds Society in collaboration with IEEE BVCOE at BVEST, the annual technical fest of BVCOE, combining data analytics with mental health awareness. The event began with a strategic quiz on mental health and technology, followed by a round on Exploratory Data Analysis (EDA), and concluded with participants creating Power BI dashboards from cleaned datasets. Blending technical expertise with analytical and strategic thinking, the event enhanced data skills while promoting deeper awareness of mental health issues.`,
-        mainImg: require('../assets/events/mod1.jpg'),
-        style: {}
-    },
-    {
-        name: "Uddeshaya 3.0",
-        class: 'event2425_2',
-        photos: [require('../assets/events/udd3_1.jpeg'), require('../assets/events/udd3_2.jpeg'), require('../assets/events/udd3_3.jpeg'), require('../assets/events/udd3_4.jpeg'), require('../assets/events/udd3_5.jpg')],
-        description: `Uddeshaya 3.0 was a fundraiser-cum-talent event organized by Blissful Minds Society with the aim of raising funds for Bal Sahyog NGO while promoting mental health awareness and social responsibility. The event brought together students and faculty through engaging cultural performances, providing a platform to showcase artistic talents while contributing to a meaningful cause. By combining creativity with compassion, Uddeshaya 3.0 fostered teamwork, empathy, and a spirit of giving, ultimately making a positive impact on the community and reinforcing the importance of mental health advocacy.`,
-        mainImg: require('../assets/events/udd3_1.jpeg'),
-        style: {}
-    },
-    {
-        name: "PAUSE: The Treasure Hunt",
-        class: 'event2425_3',
-        photos: [require('../assets/events/pause1.jpeg'), require('../assets/events/pause2.jpeg'), require('../assets/events/pause3.jpeg')],
-        description: `The Treasure Hunt was an engaging event conducted by Blissful Minds Society that reimagined the traditional treasure hunt experience. Instead of simply racing through clues, participants paused at each checkpoint to complete creative and fun challenges, making the journey more immersive. The event encouraged teamwork, strategic thinking, and communication while exploring different college locations. The final round featured a mental health-themed crossword, blending awareness with excitement and making the experience both enjoyable and meaningful.`,
-        mainImg: require('../assets/events/pause3.jpeg'),
-        style: {}
-    },
-    {
-        name: "BLOOM: The Mental Health Fest",
-        class: 'event2425_4',
-        photos: [require('../assets/events/bloom1.jpeg'), require('../assets/events/bloom2.jpeg'), require('../assets/events/bloom3.jpeg')],
-        description: `The Mental Health Festival was a two-day event organized by Blissful Minds Society to celebrate and promote mental well-being in an engaging and meaningful way. Day 1 created a vibrant and welcoming atmosphere through BMS Fiesta and a Bake Sale, encouraging joy, bonding, and a spirit of giving while making conversations around mental health more approachable. Day 2 offered a more introspective space with activities like Art Therapy, allowing participants to express themselves creatively, build emotional awareness, and explore healthy coping mechanisms. Blending fun, reflection, and purpose, Bloom fostered connection, self-growth, and a deeper understanding of mental wellness across the campus. 🌸`,
-        mainImg: require('../assets/events/bloom1.jpeg'),
-        style: {}
-    }
-];
-
 export const EventsData2324 = [
     {
         name: "CHAI PE CHARCHA",

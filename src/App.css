@@ -709,15 +709,6 @@ button {
   grid-column: 1/3;
 }
 
-.bentoGrid>div>img {
-  object-fit: cover;
-  height: 100% !important;
-  width: 100% !important;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
 .EventModal {
   position: fixed;
   inset: 0;
@@ -744,26 +735,6 @@ button {
   border-radius: 25px;
   box-shadow: rgba(39, 7, 58, 0.25) 0px 2px 8px;
   padding: 16px 16px;
-  max-height: 80vh;
-  overflow-y: auto;
-}
-
-.AboutEvent::-webkit-scrollbar {
-  width: 8px;
-}
-
-.AboutEvent::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
-.AboutEvent::-webkit-scrollbar-thumb {
-  background: #afadec;
-  border-radius: 10px;
-}
-
-.AboutEvent::-webkit-scrollbar-thumb:hover {
-  background: #7d4bba;
 }
 
 .AboutEvent>p {
@@ -777,42 +748,18 @@ button {
   place-self: end;
   font-size: 20px;
   background-color: transparent;
-  cursor: pointer;
-  margin-bottom: 5px;
 }
 
 .eventPosterFlex {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 10px;
-  overflow-x: auto;
-  flex-wrap: nowrap;
-  padding-bottom: 10px;
-}
-
-.eventPosterFlex::-webkit-scrollbar {
-  height: 8px;
-}
-
-.eventPosterFlex::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
-.eventPosterFlex::-webkit-scrollbar-thumb {
-  background: #afadec;
-  border-radius: 10px;
-}
-
-.eventPosterFlex::-webkit-scrollbar-thumb:hover {
-  background: #7d4bba;
 }
 
 .EventPoster {
   object-fit: cover;
   height: 200px;
-  max-width: 100%;
-  flex-shrink: 0;
+  /* min-width: 300px; */
   border-radius: 15px;
 }
 

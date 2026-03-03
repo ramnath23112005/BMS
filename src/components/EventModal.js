@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
 // import bibo from '../assets/bibo.png'
-import { EventsData2223, EventsData2324, EventsData2425 } from '../data/events.data';
+import { EventsData2223, EventsData2324 } from '../data/events.data';
 
 const EventModal = ({onClose, EventName}) => {
     const modalRef = useRef();
@@ -16,56 +16,35 @@ const EventModal = ({onClose, EventName}) => {
         <div className='EventDiv'>
             <button onClick={onClose} className='modalCloseBtn'>X</button>
             
-                {EventsData2425 && EventsData2425.map((event, index)=>{
-                    if(event.class === EventName)
+                {EventsData2324&& EventsData2324.map((event)=>{
+                    if(event.class==EventName)
                     return(
-                        <div key={index} className='AboutEvent'>
+                        <div className='AboutEvent'>
                             <div className='eventPosterFlex'>
-                                {event.photos.map((img, i)=>{return(
-                                    <img key={i} src={img} alt="" className='EventPoster'/>
+                                {event.photos.map((img)=>{return(
+                                    <img src={img} className='EventPoster'/>
                                 )})}
                             </div>
                             
                             <h2>{event.name}</h2>
                             <p>{event.description}</p>
                         </div>
-                    )
-                    return null;
-                })}
+                )})}
 
-                {EventsData2324 && EventsData2324.map((event, index)=>{
-                    if(event.class === EventName)
+                {EventsData2223&& EventsData2223.map((event)=>{
+                    if(event.class==EventName)
                     return(
-                        <div key={index} className='AboutEvent'>
+                        <div className='AboutEvent'>
                             <div className='eventPosterFlex'>
-                                {event.photos.map((img, i)=>{return(
-                                    <img key={i} src={img} alt="" className='EventPoster'/>
+                                {event.photos.map((img)=>{return(
+                                    <img src={img} className='EventPoster'/>
                                 )})}
                             </div>
                             
                             <h2>{event.name}</h2>
                             <p>{event.description}</p>
                         </div>
-                    )
-                    return null;
-                })}
-
-                {EventsData2223 && EventsData2223.map((event, index)=>{
-                    if(event.class === EventName)
-                    return(
-                        <div key={index} className='AboutEvent'>
-                            <div className='eventPosterFlex'>
-                                {event.photos.map((img, i)=>{return(
-                                    <img key={i} src={img} alt="" className='EventPoster'/>
-                                )})}
-                            </div>
-                            
-                            <h2>{event.name}</h2>
-                            <p>{event.description}</p>
-                        </div>
-                    )
-                    return null;
-                })}    
+                )})}    
         </div>
     </div>
   )

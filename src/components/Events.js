@@ -4,14 +4,12 @@ import cpc1 from '../assets/events/cpc1.png'
 import bvest from '../assets/events/bvest.png'
 import udd from '../assets/events/uddeshya.png'
 import aksh from '../assets/events/aksh.png'
+import bloom from '../assets/events/bloom.png'
 import event1 from '../assets/events/event1.jpg'
 import event2 from '../assets/events/event2.jpg'
 import event3 from '../assets/events/event3.jpg'
 import event4 from '../assets/events/event4.jpg'
-import mod1 from '../assets/events/mod1.jpg'
-import udd3 from '../assets/events/udd3_1.jpeg'
-import pause3 from '../assets/events/pause3.jpeg'
-import bloom1 from '../assets/events/bloom1.jpeg'
+import teamprev from '../assets/events/l4.jpeg'
 import {motion} from 'framer-motion'
 import EventModal from './EventModal'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -55,8 +53,10 @@ const Events = ({events_ref,scrollvar,setShowModal}) => {
                             </div>
                             <div className='bentoGrid'>
                                     <motion.div className='event1' variants={slideAnimation}
-                                        onClick={() => {setShowEventModal(true); setEventName('event1')}}
-                                        initial={{opacity:0}}
+                                        onClick={(e)=> {setShowEventModal(true); setEventName(e.target.parentNode.className)}}
+                                        initial={{opacity:0, 
+                                            // x:'-10%', y:'-10%'
+                                    }}
                                         animate={inView?"visible":""}
                                         transition={slideAnimation.transition}
                                     >
@@ -64,8 +64,10 @@ const Events = ({events_ref,scrollvar,setShowModal}) => {
                                     </motion.div>
         
                                     <motion.div className='event2' variants={slideAnimation}
-                                        onClick={() => {setShowEventModal(true); setEventName('event2')}}
-                                        initial={{opacity:0}}
+                                        onClick={(e)=> {setShowEventModal(true); setEventName(e.target.parentNode.className)}}
+                                        initial={{opacity:0,
+                                            //  x:'10%', y:'-10%'
+                                            }}
                                         animate={inView?"visible":""}
                                         transition={slideAnimation.transition}
                                     >
@@ -74,16 +76,21 @@ const Events = ({events_ref,scrollvar,setShowModal}) => {
         
                                     <motion.div className='event3' variants={slideAnimation}
                                         onClick={(e)=> {setShowModal(true);}}
-                                        initial={{opacity:0}}
+                                        initial={{opacity:0,
+                                            //  x:'0', y:'0'
+                                            }}
                                         animate={inView?"visible":""}
                                         transition={slideAnimation.transition}
                                     >
                                         Spotlight
+                                        {/* <img src={bloom} alt=""  /> */}
                                     </motion.div>
         
                                     <motion.div className='event4' variants={slideAnimation}
-                                        onClick={() => {setShowEventModal(true); setEventName('event4')}}
-                                        initial={{opacity:0}}
+                                        onClick={(e)=> {setShowEventModal(true); setEventName(e.target.parentNode.className)}}
+                                        initial={{opacity:0,
+                                            //  x:'10%', y:'0'
+                                            }}
                                         animate={inView?"visible":""}
                                         transition={slideAnimation.transition}
                                     >
@@ -91,8 +98,10 @@ const Events = ({events_ref,scrollvar,setShowModal}) => {
                                     </motion.div>
         
                                     <motion.div className='event5' variants={slideAnimation}
-                                        onClick={() => {setShowEventModal(true); setEventName('event5')}}
-                                        initial={{opacity:0}}
+                                        onClick={(e)=> {setShowEventModal(true); setEventName(e.target.parentNode.className)}}
+                                        initial={{opacity:0,
+                                            //  x:'-10%', y:'10%'
+                                            }}
                                         animate={inView?"visible":""}
                                         transition={slideAnimation.transition}
                                     >
@@ -100,8 +109,10 @@ const Events = ({events_ref,scrollvar,setShowModal}) => {
                                     </motion.div>
         
                                     <motion.div className='event6' variants={slideAnimation}
-                                        onClick={() => {setShowEventModal(true); setEventName('event6')}}
-                                        initial={{opacity:0}}
+                                        onClick={(e)=> {setShowEventModal(true); setEventName(e.target.parentNode.className)}}
+                                        initial={{opacity:0,
+                                            //  x:'10%', y:'10%'
+                                            }}
                                         animate={inView?"visible":""}
                                         transition={slideAnimation.transition}
                                     >
@@ -120,7 +131,7 @@ const Events = ({events_ref,scrollvar,setShowModal}) => {
                             <div className='bentoGrid bento2'>
 
                                     <motion.div className='event11' variants={slideAnimation}
-                                        onClick={() => {setShowEventModal(true); setEventName('event11')}}
+                                        onClick={(e)=> {setShowEventModal(true); setEventName(e.target.parentNode.className)}}
                                         initial={{opacity:0}}
                                         animate={inView?"visible":""}
                                         transition={slideAnimation.transition}
@@ -129,7 +140,7 @@ const Events = ({events_ref,scrollvar,setShowModal}) => {
                                     </motion.div>
 
                                     <motion.div className='event12' variants={slideAnimation}
-                                        onClick={() => {setShowEventModal(true); setEventName('event12')}}
+                                        onClick={(e)=> {setShowEventModal(true); setEventName(e.target.parentNode.className)}}
                                         initial={{opacity:0}}
                                         animate={inView?"visible":""}
                                         transition={slideAnimation.transition}
@@ -137,8 +148,17 @@ const Events = ({events_ref,scrollvar,setShowModal}) => {
                                         <img src={event2} alt="" style={{height:'255px', objectPosition:'left'}}/>
                                     </motion.div>
 
+                                    {/* <motion.div className='teamprev' variants={slideAnimation}
+                                        onClick={(e)=> {setShowEventModal(true); setEventName(e.target.parentNode.className)}}
+                                        initial={{opacity:0, x:'0', y:'0'}}
+                                        animate={inView?"visible":""}
+                                        transition={slideAnimation.transition}
+                                    >
+                                        <img src={teamprev} alt="" style={{width:'300px'}} />
+                                    </motion.div> */}
+
                                     <motion.div className='event13' variants={slideAnimation}
-                                        onClick={() => {setShowEventModal(true); setEventName('event13')}}
+                                        onClick={(e)=> {setShowEventModal(true); setEventName(e.target.parentNode.className)}}
                                         initial={{opacity:0}}
                                         animate={inView?"visible":""}
                                         transition={slideAnimation.transition}
@@ -147,7 +167,7 @@ const Events = ({events_ref,scrollvar,setShowModal}) => {
                                     </motion.div>
 
                                     <motion.div className='event14' variants={slideAnimation}
-                                        onClick={() => {setShowEventModal(true); setEventName('event14')}}
+                                        onClick={(e)=> {setShowEventModal(true); setEventName(e.target.parentNode.className)}}
                                         initial={{opacity:0}}
                                         animate={inView?"visible":""}
                                         transition={slideAnimation.transition}
@@ -158,52 +178,12 @@ const Events = ({events_ref,scrollvar,setShowModal}) => {
                             </div>
                 </div>
     },
-    {
-        xml: 
-                <div className="eventsCarousel" >
-                            <div>
-                                <div className='eventsHeading'>Events</div>
-                                <div className='eventsSubHeading'>2024-25</div>
-                            </div>
-                            <div className='bentoGrid bento2'>
-                                    <motion.div className='event2425_1' variants={slideAnimation}
-                                        onClick={() => {setShowEventModal(true); setEventName('event2425_1')}}
-                                        initial={{opacity:0}}
-                                        animate={inView?"visible":""}
-                                        transition={slideAnimation.transition}
-                                    >
-                                        <img src={mod1} alt=""/>
-                                    </motion.div>
-        
-                                    <motion.div className='event2425_2' variants={slideAnimation}
-                                        onClick={() => {setShowEventModal(true); setEventName('event2425_2')}}
-                                        initial={{opacity:0}}
-                                        animate={inView?"visible":""}
-                                        transition={slideAnimation.transition}
-                                    >
-                                        <img src={udd3} alt=""/>
-                                    </motion.div>
-        
-                                    <motion.div className='event2425_3' variants={slideAnimation}
-                                        onClick={() => {setShowEventModal(true); setEventName('event2425_3')}}
-                                        initial={{opacity:0}}
-                                        animate={inView?"visible":""}
-                                        transition={slideAnimation.transition}
-                                    >
-                                        <img src={pause3} alt=""/>
-                                    </motion.div>
-        
-                                    <motion.div className='event2425_4' variants={slideAnimation}
-                                        onClick={() => {setShowEventModal(true); setEventName('event2425_4')}}
-                                        initial={{opacity:0}}
-                                        animate={inView?"visible":""}
-                                        transition={slideAnimation.transition}
-                                    >
-                                        <img src={bloom1} alt=""/>
-                                    </motion.div>
-                            </div>
-            </div>
-    },
+    // {
+    //   title: "Weights",
+    //   description:
+    //     "Weightlifting generally refers to activities in which people lift weights, often in the form of dumbbells or barbells. People lift various kinds of weights for a variety of different reasons.",
+    // //   icon: require("./Media/example3.svg"),
+    // },
   ];
 
   const updateIndex = (newIndex) => {
@@ -226,8 +206,8 @@ const Events = ({events_ref,scrollvar,setShowModal}) => {
                 style={{ transform: `translate(-${activeIndex * 100}%)`
             }}
             >
-                {items.map((item, index) => {
-                return <div key={index} className="eventsCarouselCon" > {item.xml}
+                {items.map((item) => {
+                return <div className="eventsCarouselCon" > {item.xml}
                     </div>;
                 })}
             </div>
@@ -239,23 +219,84 @@ const Events = ({events_ref,scrollvar,setShowModal}) => {
                     updateIndex(activeIndex - 1);
                 }}
                 >
-                <span className="material-symbols-outlined"><IoIosArrowBack/></span>{" "}
+                <span class="material-symbols-outlined"><IoIosArrowBack/></span>{" "}
                 </button>
+                {/* <div className="indicators">
+                {items.map((item, index) => {
+                    return (
+                    <button
+                        className="indicator-buttons"
+                        onClick={() => {
+                        updateIndex(index);
+                        }}
+                    >
+                        <span
+                        className={`material-symbols-outlined ${
+                            index === activeIndex
+                            ? "indicator-symbol-active"
+                            : "indicator-symbol"
+                        }`}
+                        >
+                        radio_button_checked
+                        </span>
+                    </button>
+                    );
+                })}
+                </div> */}
                 <button
                 className="button-arrow2"
                 onClick={() => {
                     updateIndex(activeIndex + 1);
                 }}
                 >
-                <span className="material-symbols-outlined"><IoIosArrowForward/></span>
+                <span class="material-symbols-outlined"><IoIosArrowForward/></span>
                 </button>
             </div>
         </div>
 
             {showEventModal? <EventModal onClose={()=> setShowEventModal(false)} EventName={EventName}/>:<></>}
         </div>
+
+
+        {/* <div className='FacultyLayer'>
+            <div></div>
+            <div className='facultyLayerContent'>
+                <div className='facultyHeading'>
+                Meet Our Faculty Coordinator
+                </div>
+                <div className='facultyName'>Prof. Rubeena Vohra</div>
+                <div className='facultyText'>
+                    <p style={{marginTop:0}}>Professionally, I am an Assistant Professor in the ECE Department of BVCOE. During my educational journey from schooling to B.Tech (batch topper), M.Tech (Gold Medalist) and then Ph.D (Remote Sensing), I have always valued myself which I think, is one necessary tip to keep up a balanced mindset.</p>
+                    <p> In every phase of life, we encounter challenges, overcome obstacles, and jump past hurdles before enjoying the victory. What we must not forget is to set realistic goals to stay on track. Realistic goals are attained if and only if we have a healthy mindset. Mental health plays an important role in all of our lives and with the aim to help engineers, my students and I built the Blissful Minds Society. </p>
+                    <p>Our society aims to educate students on how to take good care of their minds by hosting various stress relieving sessions.
+                    Few tips that I wish to provide for a healthy mental state are:
+                    1) Surround yourself with good people.
+                    2) Silence the chaos in your head by praying or doing relaxing exercises.
+                 </p>
+                    
+                </div>
+            </div>
+        </div> */}
     </div>
   )
 }
 
 export default Events
+
+
+// import React, { useState } from "react";
+// import { CarouselItem } from "./CarouselItem";
+
+// const Events = () => {
+
+  
+//   return (
+//     <div className="EventsContainer">
+//     <div className="Events">
+       
+//     </div>
+//     </div>
+//   );
+// };
+
+// export default Events
